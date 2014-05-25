@@ -1,0 +1,44 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<HTML>
+   <HEAD>
+      <TITLE>My first HTML document</TITLE>
+   </HEAD>
+   <BODY>
+    
+
+
+<?php $obj_empresa_ser = urlencode(serialize($obj_empresa));
+?>
+<form name="QForm" action="OfertaDesplegada.php" method="post">
+<input type="hidden" name="obj_empresa" value="<?=$obj_empresa_ser?>">
+ </form> 
+
+   
+ <form method="post" action="OfertaDesplegada.php"> 
+ 
+
+
+
+
+  <div class="col-sm-12">
+    <div class="row">
+      <div class="col-xs-12">
+        <label>Click me <input type="text" id="Mes1" name="Mes1" value"asdadsff" /></label>
+        <p id="Mes1" name="Mes1" value='asdad'>asdads</p>
+        <p id="Dia1" name="Dia1">asda</p>
+        <h id="Anio1" name="Anio1">asdasd</h>
+        <p id="Descrip" name="Descrip">dfgdfgd</p>
+        <p id="Bene" name="Bene">ersfsfs</p>
+        <p id="Ubi" name="Ubi">rttytyutjj</p>
+        <p id="Requi" name="Requi">tryttynnjhghj</p>     
+         <p><a class="btn" href="#">Ver detalle &raquo;</a></p>
+      </div>
+    </div>
+     <input type="submit" name="valider" value="Enviar"> 
+    </form> 
+
+
+   </BODY>
+</HTML>
+

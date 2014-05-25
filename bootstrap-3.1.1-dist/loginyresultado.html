@@ -1,0 +1,35 @@
+<?php 
+
+if(!isset($_SESSION['userid'])){
+
+?>
+            <li class="dropdown" id="menuLogin">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">Login </a>
+            <div class="dropdown-menu" style="padding:17px;">
+              <form id="form2" name="form2" method="post" action="" class="login"> 
+                <input name="user" id="user" type="text" placeholder="Username"> 
+                <input name="password" id="password" type="password" placeholder="Password"><br>
+                <button type="button" id="login" class="btn">Iniciar Sesion</button>
+                <input  style="float: right; width: 60%"  type="submit" name="login" id="login" value="login" />
+                <A href="RegistroDeUsuario.php">Registrarse</A><BR>
+                <A href="ReenviarContrasena.php">Olvido Contraseña?</A><BR>
+              </form>
+            </div>
+          </li>
+          </ul>
+<?php
+}else{
+?>
+        <li class="dropdown" id="menuLogin">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin"></a>
+            <div class="dropdown-menu" style="padding:17px;">
+              <form id="form2" name="form2" method="post" action="" class="login"> 
+                <A href="logout.php">Cerrar Sesion</A><BR>
+                <A href="ReenviarContrasena.php">Perfil de usuario</A><BR>
+              </form>
+            </div>
+          </li>
+          </ul>
+<?php
+}
+?>
